@@ -1,0 +1,14 @@
+const imageDownloader = require('image-downloader');
+const options = {
+    url: "https://lh3.googleusercontent.com/lr/AGiIYOUZAiUSUOsk3L6K-nooSES0ciTKC3OzzfoK-K1q8MOzv15OrQTlyYsK9UkJgkFcM3CRUFwXWlnRz4rnJfO8hXslabHOy2CJthnFfvV8vMOMl81lc5DJglPWCQ7ntSAqI86146HEArh0fm8Y63OzbB_zmmCSn9TDSsMW908HMDIBHQwwk4QikUEygYWNLUrsjWulzw2o9ysHHCkIBfYRv9lZ7tZTDx1D0lKniWfk_ZWl0FYj0r0heL2ryo6z4ibbvz6eXD32dXhzN4KTBqInJGE0M5pYi9Qbvg5LE9vsIS90qJFTGzF7aX1zbYEmlsx0iyyJ4ypngZ12SxFHD1wRnMc5Dzme2Mr1MwoWQO98qJcOMJtMDHAHC1TTs3CbWtFMXpiEGJPwxJrqbMuiADZOTTToWVgFpI8YpSYkjqzaH81l8-zwQ0f0Mw0dcw6JiGitDPi85vPTfxcWfjlKpPa4Hc5D4ez6p3KVwsOquvXaCzye6YBZ2tx3UFs33xHlGpRwd2Fl-FII0fbgSC_aNoJMqNPwwx3wiA7VPM_Vo5h6AqfNFEqhVQH0k4pQ9ivPyUwCDkAin6d5Wc9vpi_3sbGnpEZUFhH80I8qBHr2Xt8hismsNuq-ifHpE6hzE2W3BLam9fKLwCaE1CdevsYYOxXHF8Z8WAsPR3f7L3HTJcxtDFY0gjkDqBU9xBcvDuNw_q6QGXA4GnW_eSq0yefV7omV80g60I8blKDsWNOnAHv53xOd0F4e9W1IuOEgqlHFOGYGWIJyi_23PtQ5-As4yXT8KDpbZNDLX4LxfC9g24-yKE7xtA_k07VrrBIICLbX0P_qS9NCnMqYbJ7pU6bxV33cenwnWluEOqYhS_bXY4tfjLXiYhxYz2gLPoB7TcOqPNT33baBrC1myfaiDei6c6S5tcRh-uQEhEZJZr7sMwmqeMoIVlZo6EJi8cqT7CzKzczxGTlBlzTyQ3G2vbmMQnBY3OEOA2FbXAnaCJ-DxH1fcRkZL3AgSfY=d",
+    dest: "E:/Seagull Cybernetics/Lighthouse/Download media items from google photos/downloadMediaItems/result.jpg",
+};
+
+
+
+imageDownloader
+    .image(options)
+    .then(({filename}) => {
+        console.log("file saved " + filename )
+    })
+    .catch((err) => console.error(err));
