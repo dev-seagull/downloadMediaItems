@@ -1,2 +1,5 @@
 # Dependencies file
 node_modules/
+
+# Result file
+/result.jpg
